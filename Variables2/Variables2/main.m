@@ -67,6 +67,8 @@ int main(int argc, const char * argv[]) {
         BOOL isTodayOrTomorrowHot = today || tomorrow;
         BOOL isTodayAndTomorrowHot = today && tomorrow;
         
+        NSLog("blahblahblah");
+        
         printf("Is today or tomorrow hot: %d\n", isTodayOrTomorrowHot);
         printf("Is today and tomorrow hot: %d\n", isTodayAndTomorrowHot);
 
