@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
         NSString *topAndBottomBorder = @"+-------------------------------------------------+";
         
         // We will use these blank strings to build the rows inside our for loop:
-        NSString *rowNumber, *tempHero, *tempNemesis;
+        NSString *rowNumber, *tempHero, *tempNemesis, *teacherName;
         
         // Variables we will use to know how long we want the strings
         // with added spaces to be. You must set these to the longest
@@ -33,8 +33,17 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"%@", topAndBottomBorder);
         
+        NSInteger longestTeacherName = 0;
+        
+        for (int i = 0; i < heroes.count; i++) {
+             teacherName = ((NSString *)heroes[i]);
+            if (teacherName.length > longestTeacherName) {
+                longestTeacherName = teacherName.length;
+            }
+        }
+        
         // Let's get to the good part:
-        for (int i = 0; i < [heroes count]; i++) {
+        for (int i = 0; i < longestTeacherName; i++) {
             
             // use the variable i to build the row number
             rowNumber = [NSString stringWithFormat:@"%d", i+1];
