@@ -17,6 +17,8 @@ int main(int argc, const char * argv[]) {
         int number = 455;
         char charResult;
         
+        // blah blah comment git test
+        
         result = a * b;
         charResult = a * b;
         printf("a * b = %i\n", result);
