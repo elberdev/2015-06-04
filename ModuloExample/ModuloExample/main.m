@@ -109,6 +109,21 @@ int main(int argc, const char * argv[]) {
          we DECREASED our code from 50 lines to 8 lines.
          
          */
+        //Elber I like your suggestion about using long division to explain modulo
+        int i=4;
+        int j=2;
+        
+        
+        int result = i/j;
+        
+        NSLog(@"Division result is:%i",result);
+        
+        //But
+        
+        int moduloResult = i%j;
+        
+        NSLog(@"Modulo result is:%i",moduloResult);
+        
         
     }
     
