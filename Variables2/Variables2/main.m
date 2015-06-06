@@ -18,6 +18,9 @@ int main(int argc, const char * argv[]) {
         char charResult;
         
         // blah blah comment git test
+        // hey homie
+        
+        NSLog(@"too legit to git");
         
         result = a * b;
         charResult = a * b;
